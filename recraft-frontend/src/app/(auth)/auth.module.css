@@ -1,0 +1,143 @@
+/*
+  Shared Styles for Login and Signup Pages
+*/
+
+.authContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjust min-height if your header/footer height is different */
+  min-height: calc(100vh - 150px); 
+  padding: 2rem 1rem;
+  
+  /* These two properties are crucial for ensuring the form is visible */
+  position: relative; /* Required for z-index to work */
+  z-index: 10;        /* Ensures this sits on top of the background */
+}
+
+.formCard {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  backdrop-filter: blur(10px); /* Creates a frosted glass effect */
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--dark-green);
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--medium-brown);
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box; /* Important for correct padding calculation */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--medium-green);
+  box-shadow: 0 0 0 3px rgba(90, 125, 72, 0.2);
+}
+
+.button {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--medium-green);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--dark-green);
+}
+
+.altLink {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--medium-brown);
+}
+
+.altLink a {
+  color: var(--medium-green);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.altLink a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the "Buyer" / "Artisan" Role Selection */
+.roleSelection {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.roleOption {
+  flex: 1;
+}
+
+.roleOption input[type="radio"] {
+  display: none; /* Hide the default radio button */
+}
+
+.roleOption label {
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style for when the radio button is checked */
+.roleOption input[type="radio"]:checked + label {
+  background-color: var(--medium-green);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/* ADD THESE STYLES */
+
+.sectionHeader {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-brown);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}

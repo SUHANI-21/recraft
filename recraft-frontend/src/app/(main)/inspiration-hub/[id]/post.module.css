@@ -1,0 +1,156 @@
+.postContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--dark-brown);
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+
+/* Author Meta Section */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.avatarContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.avatarImage {
+  object-fit: cover;
+}
+
+.authorInfo a { /* Style the link to the artisan page */
+  text-decoration: none;
+}
+
+.userName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.userName:hover {
+  color: var(--dark-green);
+}
+
+/* Main Content */
+.mainImageContainer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.mainImage {
+  object-fit: cover;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-brown);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--light-green);
+  padding-bottom: 0.5rem;
+}
+
+.materialsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.materialItem {
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Actions Section (Like and Buy buttons) */
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.likeButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.likeButton:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+.likeButton.liked {
+  background-color: var(--light-green);
+  color: white;
+  border-color: var(--medium-green);
+}
+
+.heartIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.buyButton {
+  display: inline-block;
+  background-color: var(--medium-green);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buyButton:hover {
+  background-color: var(--dark-green);
+}

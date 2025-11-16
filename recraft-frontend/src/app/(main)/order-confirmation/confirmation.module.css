@@ -1,0 +1,46 @@
+.container {
+  text-align: center;
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  color: var(--medium-green);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-green);
+  margin: 0 0 1rem 0;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--dark-brown);
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--dark-brown);
+  opacity: 0.9;
+}

@@ -1,0 +1,115 @@
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--dark-green); /* Using your color palette */
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Space between nav links */
+}
+
+.navLink {
+  font-size: 1rem;
+  color: var(--dark-brown);
+  text-decoration: none;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--medium-green);
+  border-bottom-color: var(--medium-green);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Space between buttons */
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonSecondary {
+  background-color: transparent;
+  color: var(--dark-brown);
+}
+
+.buttonSecondary:hover {
+  background-color: #f7f7f7;
+}
+
+.buttonPrimary {
+  background-color: var(--medium-green);
+  color: white;
+  border-color: var(--medium-green);
+}
+
+.buttonPrimary:hover {
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
+}
+
+.cartLink {
+  position: relative;
+  padding: 0.5rem;
+  color: var(--dark-brown);
+}
+
+.cartIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.cartCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #e63946; /* A distinct red color */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Hide navigation on smaller screens for simplicity */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}

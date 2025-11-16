@@ -1,0 +1,178 @@
+.formContainer {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  /* No box shadow needed as it's already inside the dashboard layout */
+}
+
+.formHeader {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.formTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--dark-brown);
+}
+
+.formSubtitle {
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+.formSection {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.input, .textarea, .select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.helperText {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* File Input Styles */
+.fileInputLabel {
+  display: block;
+  padding: 1rem;
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.fileInputLabel:hover {
+  border-color: var(--medium-green);
+  background-color: #f9f9f9;
+}
+
+.fileInput {
+  display: none; /* Hide the actual input */
+}
+
+.fileName {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: var(--dark-green);
+}
+
+/* Tag Input Styles */
+.suggestedTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.tagButton {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.tagButton:hover {
+  background-color: #d0d0d0;
+}
+
+.currentTags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.currentTag {
+  background-color: var(--light-green);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.removeTagButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Form Actions */
+.formActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.publishButton {
+  background-color: var(--dark-green);
+  color: white;
+}
+.publishButton:hover {
+  background-color: var(--medium-green);
+}
+
+.draftButton {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.draftButton:hover {
+  background-color: #e0e0e0;
+}

@@ -1,0 +1,151 @@
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dark-brown);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.checkoutLayout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Larger column for the form */
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Form Section Styles */
+.formSection {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.formGroup {
+  margin-bottom: 1.25rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.formRow > .formGroup {
+  flex: 1; /* Make columns in a row equal width */
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Order Summary Section */
+.summarySection {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 100px;
+}
+
+.summaryLine {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.summaryLine span:first-child {
+  color: #555;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+/* Coupon Section */
+.couponForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.couponInput {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.applyButton {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.applyButton:hover {
+  background-color: #333;
+}
+.applyButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.discountLine {
+  color: var(--medium-green);
+  font-weight: bold;
+}
+
+/* Place Order Button */
+.placeOrderButton {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--medium-green);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.placeOrderButton:hover {
+  background-color: var(--dark-green);
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .checkoutLayout {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+}

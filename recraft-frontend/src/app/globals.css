@@ -1,0 +1,38 @@
+/* 
+  Step 1: Define your new color palette as CSS variables.
+  This makes it easy to reuse them everywhere.
+  I have picked the colors from the image you sent.
+*/
+:root {
+  --light-green: #7BA05B;
+  --medium-green: #5A7D48;
+  --dark-green: #3E5638;
+  --medium-brown: #5A4838;
+  --dark-brown: #3E2F23;
+  --page-background: #FDF6E3; /* Your preferred cream background */
+}
+
+/* 
+  Step 2: Apply the base styles to the entire page.
+*/
+body {
+  background-color: var(--page-background);
+  color: var(--dark-brown); /* Use the darkest brown for text */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* 
+  Step 3: Create a class for your main content area to add padding.
+  This will keep everything away from the edges.
+*/
+.main-content-area {
+  width: 100%;
+  max-width: 1280px;      /* A comfortable maximum width for content */
+  margin-left: auto;      /* This centers the content block horizontally */
+  margin-right: auto;
+  padding: 2rem 1.5rem;   /* 2rem top/bottom padding, 1.5rem left/right padding */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width */
+  flex-grow: 1;           /* A flexbox property to push the footer down */
+}
